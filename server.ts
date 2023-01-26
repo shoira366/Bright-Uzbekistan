@@ -12,7 +12,6 @@ mongo()
 	.then(() => console.log("Connected MongoDB"))
 	.catch((err) => console.log(err));
 
-app.use(process.env.NODE_ENV)
 app.use(cors());
 app.use(express.json({
 	limit: '50mb'
