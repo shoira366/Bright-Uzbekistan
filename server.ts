@@ -18,7 +18,7 @@ app.use(express.json({
 }));
 app.use("/api/v1", route);
 
-app.use("/*", (_, res) => res.sendStatus(404));
+// app.use("/*", (_, res) => res.sendStatus(404));
 
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`);
