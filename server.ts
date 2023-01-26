@@ -16,9 +16,9 @@ app.use(cors());
 app.use(express.json({
 	limit: '50mb'
 }));
-app.use("/api/v1", route);
+app.use("/", route);
 
-// app.use("/*", (_, res) => res.sendStatus(404));
+app.use("/*", (_, res) => res.sendStatus(404));
 
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`);
