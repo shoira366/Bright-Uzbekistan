@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc -p . && node ./dist/server.js",
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+    "build": "set NODE_ENV = production"
   },
   "keywords": [],
   "author": "",
