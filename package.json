@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/server.js",
-    "dev": "nodemon server.ts",
-    "build": "tsc -p . && npm run build"
+    "start": "tsc -p . && node ./dist/server.js",
+    "dev": "nodemon server.ts"
   },
   "keywords": [],
   "author": "",
