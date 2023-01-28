@@ -14,7 +14,7 @@ import newsController from "../controllers/news.controller";
 route
     // Login
     .post('/login', loginController.LOGIN)
-    .use(verifyToken)
+    // .use(verifyToken)
     
 	// Admins
     .get("/admins", adminsController.GET)
